@@ -7,48 +7,68 @@ const noakhaliBtn = document.getElementById('noakhali-btn');
 const feniBtn = document.getElementById('feni-btn');
 const quotaBtn = document.getElementById('quota-btn');
 const mainBalance = document.getElementById('main-balance');
+const noakhaliDonationBdt = document.getElementById('noakhali-donation-bdt');
+const historySection = document.getElementById('history-section');
 
 
 
-// console.log(noakhaliBtn,feniBtn,quotaBtn);
-// console.log(noakhali,feni,quota);
-// console.log(donation, history);
-
-noakhaliBtn.addEventListener('click', function(event){
-     event.preventDefault();
-
-     const donationAmount = parseFloat(noakhali.value);
-    
 
 
 
+noakhali.addEventListener('keyup', function(event){
+    const number = parseFloat(event.target.value);
+
+    if(!isNaN(number) &&  number > 0){
+        noakhaliBtn.removeAttribute('disabled');
+    }else{
+        noakhaliBtn.setAttribute('disabled', ture);
+    }
 })
 
 
 
+noakhaliBtn.addEventListener('click', function(event){
+    event.preventDefault();
+
+     const totalMainBalance = parseFloat(mainBalance.innerText)
+     const donationBalance = parseFloat(noakhaliDonationBdt.innerText);
+     const donationAmount = parseFloat(noakhali.value);
+
+     if(isNaN(donationAmount) || donationAmount <= 0){
+        alert('Invalid number. Please enter a valid positive number.');
+        return;
+     }
+     if(donationAmount > totalMainBalance){
+        alert('Insufficient balance!');
+        return;
+     }
 
 
+        const totalBalance = donationBalance + donationAmount;
+        document.getElementById('noakhali-donation-bdt').innerText = totalBalance.toFixed(2);
+    
+        const accountBalance = totalMainBalance - donationAmount;
+        document.getElementById('main-balance').innerText = accountBalance.toFixed(2);
 
+    // history section
+    const h = document.createElement('div');
+            h.classList.add('w-full');
+            h.innerHTML = ` 
+            <div  class="p-8 border rounded-2xl w-full">
+                <h3 class="text-xl font-bold text-textColor mb-4 leading-8">
 
+                ${donationAmount} Taka is Donated for famine-2024 at Feni, Bangladesh </h3>
 
+                <p class="text-base font-light  text-textColor text-opacity-70 leading-7 mb-6">
 
+                Date :${new Date()}</p>
+             </div>
+    `
+        historySection.appendChild(h);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        // show the dialog 
+        my_modal_5.showModal();
+})
 
 
 
