@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+}
+:root{
+    --mainColor: #B4F461;
+    --navBg: #F9F7F3;
+    --textColor: #111111;
+}
+.btn{
+    padding: 12px 32px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--mainColor);
+    border-radius: 8px;
+    border: 2px solid var(--mainColor);
+    color: var(--textColor);
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+.btn2{
+    color: var(--textColor);
+    opacity: 70%;
+    background: transparent;
+    border: 2px solid rgba(17, 17, 17, 0.3);
+    transition: all 0.7s ease;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 32px;
+}
+
+.container{
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.07);
+    z-index: 1000;
+}
+.nav-bar{
+    background-color: var(--navBg);
+    padding: 30px 0px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* transition: all 0.7s ease; */
+}
+.nav-list > button{
+    padding: 12px 32px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--mainColor);
+    border-radius: 8px;
+    border: none;
+    color: var(--textColor);
+    cursor: pointer;
+}
+.nav-list > a{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+    color: var(--textColor);
+    font-weight: 600;
+}
+.nav-list > a > img{
+    width: 48px;
+    height: 48px;
+}
+.nav-list > p{
+    display: flex;
+    align-items: center;
+    
+    color: var(--textColor);
+    opacity: 70%;
+    font-size: 20px;
+    font-weight: 500;
+}
+.main-balance{
+    margin-left: 12px;
+    margin-right: 6px;
+}
+.nav-list > p > img{
+    width: 28px;
+    height: 28px;
+}
+section{
+    margin: 80px 0px;
+    background-color: #ffffff;
+    gap: 32px;
+}
+.buttons{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px;
+    border: 1px solid rgba(17, 17, 17, 0.07);
+    border-radius: 16px;
+}
+.image{
+    width: 50%;
+}
+.image img{
+    width: 100%;
+    height: auto;
+}
+.content{
+    width: 50%;
+}
+.donation-balance{
+    border-radius: 8px;
+    padding: 10px 16px;
+
+    display: inline-flex;
+    align-items: center;
+    background-color:  rgba(17, 17, 17, 0.05);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+
+}
+.total-balance{
+    margin-left: 8px;
+    margin-right: 4px;
+}
+h3{
+    font-size: 20px;
+    color: var(--textColor);
+    font-weight: bold;
+    margin-bottom: 16px;
+    line-height: 30px;
+}
+p{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--textColor);
+    opacity: 70%;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+.input-fild{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.input-fild input{
+    padding: 18px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 8px;
+    width: 100%;
+
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(17, 17, 17, 0.4);
+}
+.donateNow{
+    width: 100%;
+    padding: 16px 0px;
+    border: 2px solid var(--mainColor);
+    background-color: var(--mainColor);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--textColor);
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+.donateNow:hover{
+    /* background-color: rgba(180, 244, 97, 0.8);
+    border: 2px solid rgba(180, 244, 97, 0.8); */
+    color: var(--textColor);
+    opacity: 70%;
+    background: transparent;
+    border: 2px solid rgba(17, 17, 17, 0.3);
+
+}
+
+/* .hcard-container{
+    gap: 32px;
+} */
+.hCard{
+    padding: 32px;
+    border: 1px solid rgba(17, 17, 17, 0.07);
+    border-radius: 16px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+.hCard > p{
+    margin-bottom: 0;
+}
+
+
+
+
+.footer{
+    background-color: var(--navBg);
+    padding: 75px 0px;
+}
