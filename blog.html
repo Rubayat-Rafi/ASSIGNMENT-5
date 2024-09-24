@@ -41,8 +41,8 @@
      <!-- header section start here  -->
      <header class="bg-white">
         <div class="py-8 bg-navBg">
-            <nav class="flex items-center flex-col md:flex-row  justify-between gap-6 transition-all w-11/12 mx-auto max-w-7xl">
-                <a href="index.html" class="py-3 px-8 font-semibold text-xl rounded-lg bg-mainColor border-2 border-mainColor hover:bg-[#83cb25] hover:border-[#83cb25] transition-colors duration-500">Home</a>
+            <nav class="flex items-center flex-col md:flex-row  justify-between gap-5 md:gap-6 transition-all w-11/12 mx-auto max-w-7xl">
+                <a href="index.html" class="py-2 px-6 md:py-3 md:px-8 font-semibold text-base md:text-xl rounded-lg bg-mainColor border-2 border-mainColor hover:bg-[#83cb25] hover:border-[#83cb25] transition-colors duration-500">Home</a>
                 <a href="#" class="flex items-center gap-4"><img src="./Images/logo.png" alt="logo icon" class="w-12 h-12"><span class="text-xl font-semibold">Donate Bangladesh</span></a>
                 <p class="flex items-center text-xl font-medium text-textColor text-opacity-70"><img src="./Images/coin.png" alt="coin icon" class="h-7 w-7"><span id="main-balance" class="ml-3 mr-1">5500</span>BDT</p>
             </nav>
@@ -56,33 +56,39 @@
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p> Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.</p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>To select an element from the Document Object Model (DOM) in JavaScript, <mark>(getElementById)</mark> to select by ID,<mark>(getElementsByClassName)</mark>  to select by class name, <mark>(getElementsByTagName)</mark> to select by tag name, or the more flexible <mark>(querySelector)</mark> and <mark>(querySelectorAll)</mark> which allow for CSS selector-based selection to target elements based on various attributes and combinations of selectors.</p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>Event delegation is a technique where you attach a single event listener to a parent element, allowing you to handle events triggered on any of its child elements by leveraging the "event bubbling" mechanism; this is particularly useful when dealing with large lists of dynamically added elements, as it significantly improves performance by reducing the number of event listeners needed and simplifies code maintenance by centralizing event handling logic in one place.</p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>To manipulate an element's attributes and styles using the DOM in JavaScript, you first need to select the desired element, then access its attributes using setAttribute to change values and its style properties directly through the style property to modify CSS styles. 
+            </p>
             </div>
           </div>
     </main>
 
     <footer class="bg-navBg py-9 mt-20">
     </footer>
+
+    
+
+
+
 </body>
 </html>
