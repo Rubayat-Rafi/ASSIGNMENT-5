@@ -11,6 +11,7 @@ const noakhaliDonationBdt = document.getElementById('noakhali-donation-bdt');
 const feniDonationBdt = document.getElementById('feni-donation-bdt');
 const quotaDonationBdt = document.getElementById('quota-donation-bdt');
 const historySection = document.getElementById('history-section');
+const noDonation = document.getElementById('no-donation');
 
 
 
@@ -50,6 +51,8 @@ noakhaliBtn.addEventListener('click', function(event){
         document.getElementById('main-balance').innerText = accountBalance.toFixed(2);
 
     // history section
+    noDonation.classList.add('hidden');
+     
     const h = document.createElement('div');
             h.classList.add('w-full');
             h.innerHTML = ` 
@@ -104,13 +107,15 @@ feniBtn.addEventListener('click', function(event){
         document.getElementById('main-balance').innerText = accountBalance.toFixed(2);
 
     // history section
+    noDonation.classList.add('hidden');
+
     const h = document.createElement('div');
             h.classList.add('w-full');
             h.innerHTML = ` 
             <div  class="p-8 border rounded-2xl w-full">
                 <h3 class="text-xl font-bold text-textColor mb-4 leading-8">
 
-                ${donationAmount} Taka is Donated for Aid for Injured in the Quota Movement </h3>
+                ${donationAmount} Taka is Donated for famine-2024 at Feni, Bangladesh </h3>
 
                 <p class="text-base font-light  text-textColor text-opacity-70 leading-7 mb-6">
 
@@ -162,6 +167,8 @@ quotaBtn.addEventListener('click', function(event){
         document.getElementById('main-balance').innerText = accountBalance.toFixed(2);
 
     // history section
+    noDonation.classList.add('hidden');
+    
     const h = document.createElement('div');
             h.classList.add('w-full');
             h.innerHTML = ` 

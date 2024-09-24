@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- google font link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+ 
+     <!-- css link  -->
+     <link rel="stylesheet" href="./style/style.css">
+ 
+     <!-- tailwindcss cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Blog Page</title>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                mainColor: '#B4F461',
+                navBg: '#F9F7F3',
+                textColor: '#111111',
+              },
+              fontFamily: {
+                Lexend: "Lexend",
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body class="font-Lexend text-textColor bg-white">
+
+     <!-- header section start here  -->
+     <header class="bg-white">
+        <div class="py-8 bg-navBg">
+            <nav class="flex items-center flex-col md:flex-row  justify-between gap-6 transition-all w-11/12 mx-auto max-w-7xl">
+                <a href="index.html" class="py-3 px-8 font-semibold text-xl rounded-lg bg-mainColor border-2 border-mainColor hover:bg-[#83cb25] hover:border-[#83cb25] transition-colors duration-500">Home</a>
+                <a href="#" class="flex items-center gap-4"><img src="./Images/logo.png" alt="logo icon" class="w-12 h-12"><span class="text-xl font-semibold">Donate Bangladesh</span></a>
+                <p class="flex items-center text-xl font-medium text-textColor text-opacity-70"><img src="./Images/coin.png" alt="coin icon" class="h-7 w-7"><span id="main-balance" class="ml-3 mr-1">5500</span>BDT</p>
+            </nav>
+        </div>
+     </header>
+    <!-- header section end here  -->
+
+    <!-- main section start here -->
+    <main class="w-11/12 mx-auto max-w-7xl mt-20 space-y-5 min-h-[580px]">
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+    </main>
+
+    <footer class="bg-navBg py-9 mt-20">
+    </footer>
+</body>
+</html>

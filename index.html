@@ -41,15 +41,15 @@
      <header class="bg-white">
         <div class="py-8 bg-navBg">
             <nav class="flex items-center flex-col md:flex-row  justify-between gap-6 transition-all w-11/12 mx-auto max-w-7xl">
-                <button class="py-3 px-8 font-semibold text-xl rounded-lg bg-mainColor border-2 border-mainColor" >Blog</button>
+                <a href="blog.html" class="py-3 px-8 font-semibold text-xl rounded-lg bg-mainColor border-2 border-mainColor hover:bg-[#83cb25] hover:border-[#83cb25] transition-colors duration-500" >Blog</a>
                 <a href="#" class="flex items-center gap-4"><img src="./Images/logo.png" alt="logo icon" class="w-12 h-12"><span class="text-xl font-semibold">Donate Bangladesh</span></a>
                 <p class="flex items-center text-xl font-medium text-textColor text-opacity-70"><img src="./Images/coin.png" alt="coin icon" class="h-7 w-7"><span id="main-balance" class="ml-3 mr-1">5500</span>BDT</p>
             </nav>
         </div>
 
         <div class="flex items-center justify-center gap-6 transition-all w-11/12 mx-auto max-w-7xl py-8">
-            <button id="donation-btn" class="py-3 px-8 font-semibold text-xl rounded-lg bg-mainColor border-2 border-mainColor transition-color duration-200">Donation</button>
-            <button id="history-btn" class="bg-transparent font-semibold text-xl rounded-lg text-textColor text-opacity-70 py-3 px-8  border-2 border-textColor border-opacity-30 transition-color duration-200">History</button>
+            <button id="donation-btn" class="py-3 px-8 font-semibold text-xl rounded-lg bg-mainColor border-2 border-mainColor transition-colors duration-500">Donation</button>
+            <button id="history-btn" class="bg-transparent font-semibold text-xl rounded-lg text-textColor text-opacity-70 py-3 px-8  border-2 border-textColor border-opacity-30 transition-color duration-500">History</button>
         </div>
      </header>
     <!-- header section end here  -->
@@ -121,10 +121,15 @@
         <!-- History card section -->
          <section id="history-card" class="hidden">
 
-            <div id="history-section" class="flex flex-col items-center justify-center mt-20 gap-8">
-                
+            <div id="history-section" class="flex flex-col items-center mt-20 gap-8 min-h-[450px]">
+                   <div id="no-donation" class="h-[450px]">
+                    <h3 class="font-extrabold text-3xl text-center text-red-500">No Donation Yet</h3>
+                   </div>
             </div>
          </section>
+        <!-- History card section -->
+
+
 
         <!-- alert message section -->
             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">

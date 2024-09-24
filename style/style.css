@@ -8,29 +8,6 @@ header{
     z-index: 1000;
 }
 
-/*
-.donateNow{
-    width: 100%;
-    padding: 16px 0px;
-    border: 2px solid var(--mainColor);
-    background-color: var(--mainColor);
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--textColor);
-    cursor: pointer;
-    transition: all 0.7s ease;
-}*/
-/*
-.donateNow:hover{
-    /* background-color: rgba(180, 244, 97, 0.8);
-    border: 2px solid rgba(180, 244, 97, 0.8); */
- /*   color: var(--textColor);
-    opacity: 70%;
-    background: transparent;
-    border: 2px solid rgba(17, 17, 17, 0.3);
-
-} */
 
 
 
