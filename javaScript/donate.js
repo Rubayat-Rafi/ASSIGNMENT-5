@@ -42,6 +42,8 @@ function commonDonation(donationBalanceBdt, input, place ){
        const accountBalance = totalMainBalance - donationAmount;
        mainBalance.innerText = accountBalance.toFixed(2);
 
+       input.value = '';
+
    // history section
         noDonation.classList.add('hidden');
 
